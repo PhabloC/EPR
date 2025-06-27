@@ -1,1 +1,19 @@
+/* Importando a fonte Dominik */
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../font/centurygothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century-Gothic-Bold";
+  src: url("../font/centurygothic_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Century Gothic", sans-serif;
+}
+
 @import "tailwindcss";

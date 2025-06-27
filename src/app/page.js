@@ -1,5 +1,9 @@
-import Image from "next/image";
+import Primary from "@/components/PrimarySection/Primary";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Primary />
+    </>
+  );
 }
