@@ -7,10 +7,10 @@ export default function Primary() {
         src="/banner.png"
         alt="Promotional banner"
         fill
-        sizes="100vw"
+        sizes="100%"
         style={{ objectFit: "cover" }}
         priority
-        quality={75}
+        quality={100}
       />
     </div>
   );

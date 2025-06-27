@@ -4,7 +4,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>
+      <body style={{ fontFamily: "Century-Gothic, sans-serif" }}>
         <Header />
         {children}
       </body>
