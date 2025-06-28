@@ -1,6 +1,7 @@
 export default function Sobre() {
   return (
     <div
+      id="empresa"
       style={{ fontFamily: "Century-Gothic, sans-serif" }}
       className="flex justify-center items-center p-8"
     >
