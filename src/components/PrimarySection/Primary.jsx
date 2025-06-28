@@ -41,10 +41,10 @@ export default function Primary() {
           src="/bannermobile.png"
           alt="Banner Mobile"
           fill
-          sizes="100vw"
+          sizes="200px"
           style={{ objectFit: "cover" }}
           priority
-          quality={100}
+          quality={80}
         />
       </div>
     );
