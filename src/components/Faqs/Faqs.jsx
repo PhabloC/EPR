@@ -73,25 +73,25 @@ export default function Perguntas() {
     <>
       <div
         id="perguntas"
-        className="flex flex-col items-center pt-30 w-full p-20"
+        className="flex flex-col items-center pt-10 w-full px-4 sm:px-8 md:px-20 pb-8 md:pb-20"
       >
         <div>
-          <h1 className="text-[#003057] text-[35px] font-bold">
+          <h1 className="text-[#003057] text-2xl sm:text-3xl md:text-[35px] font-bold text-center">
             Perguntas Frequentes (FAQs)
           </h1>
         </div>
-        <div className="w-full max-w-3xl mt-10 border-t border-[#DADADA]">
+        <div className="w-full max-w-3xl mt-6 sm:mt-10 border-t border-[#DADADA]">
           {faqs.map((faq, idx) => (
             <div key={idx} className="relative border-b border-[#DADADA]">
               <button
-                className="w-full text-left py-4 flex justify-between items-center focus:outline-none bg-transparent"
+                className="w-full text-left py-3 sm:py-4 flex justify-between items-center focus:outline-none bg-transparent"
                 onClick={() => handleToggle(idx)}
                 style={{ borderBottom: "none" }}
               >
-                <span className={`font-bold text-[#003057] text-[20px]`}>
+                <span className="font-bold text-[#003057] text-base sm:text-lg md:text-[20px]">
                   {faq.question}
                 </span>
-                <span className="text-[#003057] text-xl">
+                <span className="text-[#003057] text-lg sm:text-xl">
                   {openIndex === idx ? <ChevronUp /> : <ChevronDown />}
                 </span>
               </button>
@@ -104,7 +104,9 @@ export default function Perguntas() {
                 }}
               >
                 {openIndex === idx && (
-                  <div className="text-[#003057] text-[18px]">{faq.answer}</div>
+                  <div className="text-[#003057] text-sm sm:text-base md:text-[18px]">
+                    {faq.answer}
+                  </div>
                 )}
               </div>
             </div>

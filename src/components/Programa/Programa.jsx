@@ -5,14 +5,22 @@ export default function Programa() {
     <>
       <div
         id="programa"
-        className="bg-[#003057] w-full flex flex-col justify-center items-center pt-25 "
+        className="bg-[#003057] w-full flex flex-col justify-center items-center "
       >
         <div>
-          <Image src="/selos.png" alt="selo" width={400} height={400} />
+          <Image
+            src="/selos.png"
+            alt="selo"
+            width={400}
+            height={400}
+            className="w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] object-contain mx-auto mt-[5px] md:mt-[-50px] sm:mt-[20px]"
+          />
         </div>
-        <div className="text-white w-[800px] mt-20">
-          <h1 className="text-[24px] font-bold">SOBRE O PROGRAMA</h1>
-          <div className="text-[16px] mt-5">
+        <div className="text-white w-full max-w-[800px] px-4 sm:px-0 ">
+          <h1 className="text-[20px] sm:text-[24px] font-bold">
+            SOBRE O PROGRAMA
+          </h1>
+          <div className="text-[14px] sm:text-[16px] mt-5">
             <p className="mb-5">
               O <strong>Programa de Trainee EPR 2025</strong> representa um
               marco importante para a companhia. Nesta primeira edição, o
@@ -42,13 +50,23 @@ export default function Programa() {
             </p>
           </div>
         </div>
-        <div className="text-white w-[800px] mt-20">
-          <h1 className="text-[24px] font-bold">REMUNERAÇÃO E BENEFÍCIO:</h1>
-          <div className="flex gap-20 mt-20 justify-between border-b-3 border-white pb-10">
-            <div className="flex items-center gap-8">
-              <Image src="/carta.png" alt="carta" width={100} height={100} />
+        <div className="text-white w-full max-w-[800px] px-4 sm:px-0 mt-10 sm:mt-20">
+          <h1 className="text-[20px] sm:text-[24px] font-bold">
+            REMUNERAÇÃO E BENEFÍCIO:
+          </h1>
+          <div className="flex flex-col sm:flex-row gap-8 sm:gap-20 mt-10 sm:mt-20 justify-between border-b-3 border-white pb-10">
+            <div className="flex items-center gap-4 sm:gap-8">
+              <Image
+                src="/carta.png"
+                alt="carta"
+                width={80}
+                height={80}
+                className="w-[60px] h-[60px] sm:w-[100px] sm:h-[100px]"
+              />
               <div>
-                <h3 className="text-[16px] font-bold">SALÁRIO TRAINEE:</h3>
+                <h3 className="text-[14px] sm:text-[16px] font-bold">
+                  SALÁRIO TRAINEE:
+                </h3>
                 <p>
                   Fixo <strong>R$7.000,00</strong>{" "}
                 </p>
@@ -57,42 +75,84 @@ export default function Programa() {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-8">
-              <Image src="/pizza.png" alt="pizza" width={100} height={100} />
-              <div className="w-[150px]">
-                <h3 className="text-[16px] font-bold">
-                  PARTICPAÇÃO NOS LUCROS E RESULTADOS:
+            <div className="flex items-center gap-4 sm:gap-8">
+              <Image
+                src="/pizza.png"
+                alt="pizza"
+                width={80}
+                height={80}
+                className="w-[60px] h-[60px] sm:w-[100px] sm:h-[100px]"
+              />
+              <div className="w-full sm:w-[150px]">
+                <h3 className="text-[14px] sm:text-[16px] font-bold">
+                  PARTICPAÇÃO NOS LUCROS E RESULTADOS
                 </h3>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-20 mt-10 ">
-            <div className="flex items-center gap-8 justify-between w-full">
-              <div className="flex flex-col items-center gap-4 w-[200px]">
-                <Image src="/medico.png" alt="medico" width={80} height={80} />
-                <p className="text-[16px] font-bold">Assistência Médica</p>
+          <div className="flex flex-col  gap-8 sm:gap-20 mt-10">
+            <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-8 justify-between w-full">
+              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+                <Image
+                  src="/medico.png"
+                  alt="medico"
+                  width={60}
+                  height={60}
+                  className="w-[65px] h-[65px] md:w-[80px] md:h=[60px] sm:w-[80px] sm:h-[80px]"
+                />
+                <p className="text-[14px] sm:text-[16px] font-bold">
+                  Assistência Médica
+                </p>
               </div>
-              <div className="flex flex-col items-center gap-4 w-[200px]">
-                <Image src="/fork.png" alt="fork" width={80} height={80} />
-                <p className="text-[16px] font-bold">Vale Refeição</p>
+              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+                <Image
+                  src="/fork.png"
+                  alt="fork"
+                  width={60}
+                  height={60}
+                  className="w-[65px] h-[65px] sm:w-[80px] sm:h-[80px]"
+                />
+                <p className="text-[14px] sm:text-[16px] font-bold">
+                  Vale Refeição
+                </p>
               </div>
-              <div className="flex flex-col items-center gap-4 w-[200px]">
-                <Image src="/tooth.png" alt="tooth" width={80} height={80} />
-                <p className="text-[16px] font-bold">
+              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+                <Image
+                  src="/tooth.png"
+                  alt="tooth"
+                  width={60}
+                  height={60}
+                  className="w-[65px] h-[65px] sm:w-[80px] sm:h-[80px]"
+                />
+                <p className="text-[14px] sm:text-[16px] font-bold">
                   Assistência Odontológica
                 </p>
               </div>
             </div>
-            <div className="flex gap-8 justify-center w-full">
-              <div className="flex flex-col items-center gap-4 w-[200px]">
-                <Image src="/wheel.png" alt="wheel" width={65} height={65} />
-                <p className="text-[16px] font-bold text-center">
+            <div className="flex flex-col sm:flex-row gap-10 sm:gap-8 justify-center w-full">
+              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+                <Image
+                  src="/wheel.png"
+                  alt="wheel"
+                  width={50}
+                  height={50}
+                  className="w-[65px] h-[65px] md:w-[65px] md:h-[65px] sm:w-[65px] sm:h-[65px]"
+                />
+                <p className="text-[14px] sm:text-[16px] font-bold text-center">
                   Vale Transporte/Fretado ou Estacionamento
                 </p>
               </div>
-              <div className="flex flex-col items-center gap-4 w-[200px]">
-                <Image src="/life.png" alt="life" width={80} height={80} />
-                <p className="text-[16px] font-bold ">Seguro de Vida</p>
+              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+                <Image
+                  src="/life.png"
+                  alt="life"
+                  width={60}
+                  height={60}
+                  className="w-[80px] h-[60px] md:w-[80px] md:h-[60px] sm:w-[80px] sm:h-[80px]"
+                />
+                <p className="text-[14px] sm:text-[16px] font-bold">
+                  Seguro de Vida
+                </p>
               </div>
             </div>
           </div>
@@ -100,20 +160,20 @@ export default function Programa() {
       </div>
       <div
         id="oportunidades"
-        className="flex flex-col items-center pt-20 bg-[#003057]"
+        className="flex flex-col items-center pt-10 sm:pt-20 bg-[#003057]"
       >
-        <div className="bg-white border-5 border-[#FFA500] rounded-[28px] w-[90%] p-20 pl-40 mt-10">
-          <h1 className="text-[#003057] font-bold text-[24px]">
+        <div className="bg-white border-5 border-[#FFA500] rounded-[28px] w-full max-w-[90%] px-4 sm:px-20 py-10 sm:py-20 mt-10">
+          <h1 className="text-[#003057] font-bold text-[20px] sm:text-[24px]">
             OPORTUNIDADES
           </h1>
-          <div className="mt-15 gap-8 text-[#003057]">
-            <p className="mb-8 w-[1000px]">
+          <div className="mt-8 sm:mt-15 gap-8 text-[#003057]">
+            <p className="mb-8 w-full max-w-[1000px]">
               No Programa de Trainee EPR 2025, você poderá atuar em áreas
               estratégicas da companhia, desenvolvendo competências essenciais
               para sua carreira. <strong>Confira as principais frentes:</strong>
             </p>
-            <div className="mt-15">
-              <h2 className="text-[20px] font-bold text-[#FBB717]">
+            <div className="mt-8 sm:mt-15">
+              <h2 className="text-[18px] sm:text-[20px] font-bold text-[#FBB717]">
                 Gestão de Negócios e Projetos
               </h2>
               <p className="mb-8">
@@ -122,7 +182,7 @@ export default function Programa() {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-[20px] font-bold text-[#FBB717]">
+              <h2 className="text-[18px] sm:text-[20px] font-bold text-[#FBB717]">
                 Finanças e Controladoria
               </h2>
               <p className="mb-8">
@@ -131,25 +191,25 @@ export default function Programa() {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-[20px] font-bold text-[#FBB717]">
-                Jurídico e Governança{" "}
+              <h2 className="text-[18px] sm:text-[20px] font-bold text-[#FBB717]">
+                Jurídico e Governança
               </h2>
               <p className="mb-8">
                 Atuação com temas contratuais, regulatórios e de compliance.
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-[20px] font-bold text-[#FBB717]">
-                Tecnologia e Inovação{" "}
+              <h2 className="text-[18px] sm:text-[20px] font-bold text-[#FBB717]">
+                Tecnologia e Inovação
               </h2>
               <p className="mb-8">
                 Projetos de transformação digital, automação e soluções
-                tecnológicas.{" "}
+                tecnológicas.
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-[20px] font-bold text-[#FBB717]">
-                Engenharia e Operações{" "}
+              <h2 className="text-[18px] sm:text-[20px] font-bold text-[#FBB717]">
+                Engenharia e Operações
               </h2>
               <p className="mb-8">
                 Vivência prática em obras, planejamento técnico e
@@ -159,29 +219,31 @@ export default function Programa() {
           </div>
         </div>
       </div>
-      <div id="requisitos" className="bg-[#003057] p-20 flex justify-between ">
-        <div className="w-[800px] ">
-          <h1 className="text-[#FBB717] font-bold text-[35px] sans-serif">
+      <div
+        id="requisitos"
+        className="bg-[#003057] px-4 sm:px-20 py-10 sm:py-20 flex flex-col sm:flex-row justify-between"
+      >
+        <div className="w-full max-w-[800px]">
+          <h1 className="text-[#FBB717] font-bold text-[28px] sm:text-[35px] sans-serif">
             PRÉ-REQUISITOS
           </h1>
-          <div className="text-white mt-10">
+          <div className="text-white mt-6 sm:mt-10">
             <p>
               Graduação concluída entre <strong>junho de 2023</strong> e{" "}
               <strong>junho de 2025</strong>, nos seguintes cursos:
             </p>
-
-            <ul className=" list-disc list-inside mt-8">
+            <ul className="list-disc list-inside mt-6 sm:mt-8">
               <li className="mb-6">
                 Administração, Administração com ênfase em Análise de Sistemas,
                 Administração com ênfase em Ciências Contábeis, Administração
                 com ênfase em Estratégia, Administração com ênfase em Finanças,
                 Administração com ênfase em Gestão de Projetos, Administração
                 com ênfase em Negócios, Administração com ênfase em Sistemas da
-                Informação, Administração Pública{" "}
+                Informação, Administração Pública
               </li>
-              <li className="mb-6">Ciências Econômicas </li>
+              <li className="mb-6">Ciências Econômicas</li>
               <li className="mb-6">Direito</li>
-              <li className="mb-6">Economia Empresarial e Controladoria </li>
+              <li className="mb-6">Economia Empresarial e Controladoria</li>
               <li className="mb-6">
                 Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica
                 Mecânica, de Mobilidade, de Produção, de Produção Elétrica, de
@@ -197,8 +259,14 @@ export default function Programa() {
             </ul>
           </div>
         </div>
-        <div>
-          <Image src="/woman.png" alt="woman" width={500} height={100} />{" "}
+        <div className="mt-8 sm:mt-0 flex justify-center w-full sm:w-auto">
+          <Image
+            src="/woman.png"
+            alt="woman"
+            width={500}
+            height={100}
+            className="w-[500px] h-auto sm:w-[300px] sm:h-auto md:w-[400px] md:h-auto lg:w-[500px] object-contain"
+          />
         </div>
       </div>
     </>

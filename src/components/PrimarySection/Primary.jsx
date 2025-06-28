@@ -1,13 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function Primary() {
   const banner2Ref = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (banner2Ref.current) {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile && banner2Ref.current) {
       banner2Ref.current.animate(
         [
           { transform: "translateX(-100%)", opacity: 0 },
@@ -20,7 +28,27 @@ export default function Primary() {
         }
       );
     }
-  }, []);
+  }, [isMobile]);
+
+  if (isMobile) {
+    return (
+      <div
+        id="home"
+        className="mt-20"
+        style={{ position: "relative", width: "100%", height: "200px" }}
+      >
+        <Image
+          src="/bannermobile.png"
+          alt="Banner Mobile"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+          priority
+          quality={100}
+        />
+      </div>
+    );
+  }
 
   return (
     <div
@@ -46,13 +74,12 @@ export default function Primary() {
           transform: "translateX(-100%) translateY(-50%)",
           opacity: 0,
           zIndex: 2,
-          width: "100%",
+          width: "600px",
+          height: "300px",
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",
           pointerEvents: "none",
-          width: "600px",
-          height: "300px",
         }}
       >
         <Image

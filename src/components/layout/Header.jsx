@@ -86,7 +86,7 @@ export default function Header() {
         </div>
         {/* Ícone do menu mobile no canto direito */}
         <button
-          className="block md:hidden absolute right-6 top-6 z-50 bg-white rounded-full p-2 shadow-md"
+          className="block md:hidden absolute right-6 top-4 z-50 bg-white rounded-full p-2 shadow-md"
           onClick={() => setMenuOpen((open) => !open)}
           aria-label="Abrir menu"
         >
