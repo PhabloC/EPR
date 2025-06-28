@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div style={{ fontFamily: "Century-Gothic-Bold, sans-serif" }}>
       <header
-        className="bg-[#F5F5F5] flex w-full p-4 justify-between items-center pl-8 pr-8
+        className="bg-[#F5F5F5] flex w-full h-[80px] p-4 justify-between items-center pl-8 pr-8
       fixed top-0 z-50 shadow-md"
         style={{ minHeight: 80 }}
       >

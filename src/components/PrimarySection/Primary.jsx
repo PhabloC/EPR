@@ -26,7 +26,7 @@ export default function Primary() {
     <div
       id="home"
       className="mt-20"
-      style={{ position: "relative", width: "100%", height: "100vh" }}
+      style={{ position: "relative", width: "100%", height: "800px" }}
     >
       <Image
         src="/banner.png"
