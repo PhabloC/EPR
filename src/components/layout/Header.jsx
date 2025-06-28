@@ -14,7 +14,7 @@ export default function Header() {
       fixed top-0 z-50 shadow-md"
         style={{ minHeight: 80 }}
       >
-        {/* Logo sempre à esquerda */}
+        {/* Logo à esquerda */}
         <div className="flex-shrink-0">
           <a href="#home">
             <Image src="/logo.png" alt="logo" width={100} height={100} />
