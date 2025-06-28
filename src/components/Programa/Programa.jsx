@@ -16,7 +16,7 @@ export default function Programa() {
             className="w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] object-contain mx-auto mt-[5px] md:mt-[-50px] sm:mt-[20px]"
           />
         </div>
-        <div className="text-white w-full max-w-[800px] px-4 sm:px-0 ">
+        <div className="text-white w-full max-w-[800px] px-8 sm:px-0 ">
           <h1 className="text-[20px] sm:text-[24px] font-bold">
             SOBRE O PROGRAMA
           </h1>
@@ -50,7 +50,7 @@ export default function Programa() {
             </p>
           </div>
         </div>
-        <div className="text-white w-full max-w-[800px] px-4 sm:px-0 mt-10 sm:mt-20">
+        <div className="text-white w-full max-w-[800px] px-8 sm:px-0 mt-10 sm:mt-20">
           <h1 className="text-[20px] sm:text-[24px] font-bold">
             REMUNERAÇÃO E BENEFÍCIO:
           </h1>
@@ -91,7 +91,7 @@ export default function Programa() {
             </div>
           </div>
           <div className="flex flex-col  gap-8 sm:gap-20 mt-10">
-            <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-8 justify-between w-full">
+            <div className="flex flex-col sm:flex-row items-center gap-10 sm:gap-8 justify-around w-full">
               <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
                 <Image
                   src="/medico.png"
@@ -104,7 +104,7 @@ export default function Programa() {
                   Assistência Médica
                 </p>
               </div>
-              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+              <div className="flex flex-col items-center  gap-4 w-full sm:w-[200px]">
                 <Image
                   src="/fork.png"
                   alt="fork"
@@ -130,7 +130,7 @@ export default function Programa() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-10 sm:gap-8 justify-center w-full">
-              <div className="flex flex-col items-center gap-4 w-full sm:w-[200px]">
+              <div className="flex flex-col items-center  gap-4 w-full sm:w-[200px]">
                 <Image
                   src="/wheel.png"
                   alt="wheel"
@@ -223,7 +223,7 @@ export default function Programa() {
         id="requisitos"
         className="bg-[#003057] px-4 sm:px-20 py-10 sm:py-20 flex flex-col sm:flex-row justify-between"
       >
-        <div className="w-full max-w-[800px]">
+        <div className="w-full max-w-[800px] p-4">
           <h1 className="text-[#FBB717] font-bold text-[28px] sm:text-[35px] sans-serif">
             PRÉ-REQUISITOS
           </h1>
