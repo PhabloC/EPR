@@ -24,7 +24,7 @@ export default function Footer() {
       </div>
       <div className="flex gap-4 justify-center items-center">
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/company/grupoepr/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +37,7 @@ export default function Footer() {
           />
         </a>
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/@GrupoEPR"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -50,7 +50,7 @@ export default function Footer() {
           />
         </a>
         <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/grupoeprbr"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -63,7 +63,7 @@ export default function Footer() {
           />
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/grupo.epr/"
           target="_blank"
           rel="noopener noreferrer"
         >
