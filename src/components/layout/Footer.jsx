@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <div
       className="flex flex-col sm:flex-row justify-between items-center w-full h-[200px]
-    sm:h-40 px-6 sm:px-20 md:px-40 py-6 bg-[#003057] gap-2 sm:gap-0 pb-8"
+    sm:h-[200px]  px-6 sm:px-20 md:px-40 py-6 bg-[#003057] gap-2 sm:gap-0 "
     >
-      <div className="flex gap-4 justify-center items-center mb-4 sm:mb-0">
+      <div className="flex gap-4 justify-center items-center">
         <Image
           src="/logo2.png"
           alt="logo2"
@@ -22,7 +22,7 @@ export default function Footer() {
           className="w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] object-contain mx-auto"
         />
       </div>
-      <div className="flex gap-4 justify-center items-center">
+      <div className="flex gap-4 justify-center items-center sm:pb-0 pb-8">
         <a
           href="https://www.linkedin.com/company/grupoepr/"
           target="_blank"
