@@ -1,11 +1,60 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+
+function isInViewport(element) {
+  if (!element) return false;
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight - 80 && rect.bottom > 0;
+}
+
+function isMobile() {
+  if (typeof window === "undefined") return false;
+  return window.innerWidth <= 640;
+}
+
 export default function Sobre() {
+  const containerRef = useRef(null);
+  const animated = useRef(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    if (isMobile()) {
+      el.style.opacity = 1;
+      el.style.transform = "none";
+      return;
+    }
+
+    el.style.opacity = 0;
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+
+    function onScroll() {
+      if (!animated.current && isInViewport(el)) {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0)";
+        animated.current = true;
+        window.removeEventListener("scroll", onScroll);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div
       id="empresa"
       style={{ fontFamily: "Century-Gothic, sans-serif" }}
       className="flex justify-center items-center p-4 sm:p-6 md:p-8"
     >
-      <div className="border-4 border-[#FFA500] rounded-[20px] w-[90%] p-4 sm:p-8 md:p-16 lg:p-20 mt-6 md:mt-10 bg-white shadow-md">
+      <div
+        ref={containerRef}
+        className="border-4 border-[#FFA500] rounded-[20px] w-[90%] p-4 sm:p-8 md:p-16 lg:p-20 mt-6 md:mt-10 bg-white shadow-md"
+      >
         <h1 className="text-[#003057] font-bold text-xl sm:text-2xl md:text-3xl mb-4">
           SOBRE A EMPRESA
         </h1>

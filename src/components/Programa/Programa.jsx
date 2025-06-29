@@ -1,6 +1,64 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+function isInViewport(element) {
+  if (!element) return false;
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight - 80 && rect.bottom > 0;
+}
 
 export default function Programa() {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const animated1 = useRef(false);
+  const animated2 = useRef(false);
+  const animated3 = useRef(false);
+  const animated4 = useRef(false);
+
+  useEffect(() => {
+    const el1 = ref1.current;
+    const el2 = ref2.current;
+    const el3 = ref3.current;
+    const el4 = ref4.current;
+    if (!el1 || !el2 || !el3 || !el4) return;
+
+    // Initialize elements with starting styles
+    [el1, el2, el3, el4].forEach((el, index) => {
+      el.style.opacity = 0;
+      el.style.transform = "translateY(60px) scale(0.95)";
+      el.style.transition = `opacity 1.2s cubic-bezier(0.33, 1, 0.68, 1) ${
+        index * 0.2
+      }s, 
+                           transform 1.2s cubic-bezier(0.33, 1, 0.68, 1) ${
+                             index * 0.2
+                           }s`;
+    });
+
+    function animate(el, animatedRef) {
+      if (!animatedRef.current && isInViewport(el)) {
+        el.style.opacity = 1;
+        el.style.transform = "translateY(0) scale(1)";
+        animatedRef.current = true;
+      }
+    }
+
+    function onScroll() {
+      animate(el1, animated1);
+      animate(el2, animated2);
+      animate(el3, animated3);
+      animate(el4, animated4);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    // Small delay to ensure layout is rendered
+    setTimeout(onScroll, 100);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
       <div
@@ -16,7 +74,10 @@ export default function Programa() {
             className="w-[180px] h-[180px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] object-contain mx-auto mt-[5px] md:mt-[-50px] sm:mt-[20px]"
           />
         </div>
-        <div className="text-white w-full max-w-[800px] px-8 sm:px-0 ">
+        <div
+          ref={ref1}
+          className="text-white w-full max-w-[800px] px-8 sm:px-0 "
+        >
           <h1 className="text-[20px] sm:text-[24px] font-bold">
             SOBRE O PROGRAMA
           </h1>
@@ -50,7 +111,10 @@ export default function Programa() {
             </p>
           </div>
         </div>
-        <div className="text-white w-full max-w-[800px] px-8 sm:px-0 mt-10 sm:mt-20">
+        <div
+          ref={ref2}
+          className="text-white w-full max-w-[800px] px-8 sm:px-0 mt-10 sm:mt-20"
+        >
           <h1 className="text-[20px] sm:text-[24px] font-bold">
             REMUNERAÇÃO E BENEFÍCIO:
           </h1>
@@ -162,7 +226,10 @@ export default function Programa() {
         id="oportunidades"
         className="flex flex-col items-center pt-10 sm:pt-20 bg-[#003057]"
       >
-        <div className="bg-white border-5 border-[#FFA500] rounded-[28px] w-full max-w-[90%] px-4 sm:px-20 py-10 sm:py-20 mt-10">
+        <div
+          ref={ref3}
+          className="bg-white border-5 border-[#FFA500] rounded-[28px] w-full max-w-[90%] px-4 sm:px-20 py-10 sm:py-20 mt-10"
+        >
           <h1 className="text-[#003057] font-bold text-[20px] sm:text-[24px]">
             OPORTUNIDADES
           </h1>
@@ -223,7 +290,7 @@ export default function Programa() {
         id="requisitos"
         className="bg-[#003057] px-4 sm:px-20 py-10 sm:py-20 flex flex-col sm:flex-row justify-between"
       >
-        <div className="w-full max-w-[800px] p-4">
+        <div ref={ref4} className="w-full max-w-[800px] p-4">
           <h1 className="text-[#FBB717] font-bold text-[28px] sm:text-[35px] sans-serif">
             PRÉ-REQUISITOS
           </h1>
