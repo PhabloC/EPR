@@ -1,7 +1,7 @@
 export default function Valores() {
   return (
     <div className="flex flex-col md:flex-row w-full min-h-[500px] justify-center items-center gap-6 md:gap-8 p-8 sm:p-8 md:p-12 md:pl-40 md:pr-40">
-      <div className="bg-[#003057] text-white w-full h-[320px] sm:h-[380px] md:h-[400px] p-6 sm:p-10 md:p-12 rounded-[18px] flex flex-col items-center font-bold mb-4 md:mb-0 mx-auto">
+      <div className="bg-[#003057] text-white w-full h-[320px] sm:h-[380px] md:h-[400px] p-6 sm:p-10 md:p-12 rounded-[18px] flex flex-col items-center  font-bold mb-4 md:mb-0 mx-auto">
         <div className="w-full max-w-xs sm:max-w-md">
           <h2 className="text-base sm:text-lg md:text-2xl mb-3 sm:mb-4 md:mb-5">
             NOSSOS VALORES
