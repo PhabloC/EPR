@@ -63,6 +63,7 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'G-ZRMDXZ2VCY');
         `}</Script>
+
         {/* Google Ads */}
         <Script
           async
@@ -75,10 +76,12 @@ export default function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'AW-719214096');
         `}</Script>
+
         {/* Assistive Plugin */}
         <Script id="assistive-plugin" strategy="afterInteractive">{`
           (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.charset="UTF-8"; s.src = 'https://cdn.assistive.com.br/plugin/AssistiveWebPlugin.js'; s.async = true; s.onload = function(){ assistive.init({});}; h.appendChild(s); })();
         `}</Script>
+
         {/* Meta Pixel */}
         <Script id="meta-pixel" strategy="afterInteractive">{`
           !function(f,b,e,v,n,t,s)
