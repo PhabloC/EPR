@@ -26,7 +26,6 @@ export default function Programa() {
     const el4 = ref4.current;
     if (!el1 || !el2 || !el3 || !el4) return;
 
-    // Initialize elements with starting styles
     [el1, el2, el3, el4].forEach((el, index) => {
       el.style.opacity = 0;
       el.style.transform = "translateY(60px) scale(0.95)";
@@ -54,7 +53,6 @@ export default function Programa() {
     }
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    // Small delay to ensure layout is rendered
     setTimeout(onScroll, 100);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -326,13 +324,13 @@ export default function Programa() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 sm:mt-0 flex justify-center w-full sm:w-auto">
+        <div className="mt-8 sm:mt-0 flex justify-center w-full sm:w-auto p-4">
           <Image
-            src="/woman.png"
+            src="/woman.jpg"
             alt="woman"
             width={500}
             height={100}
-            className="w-[500px] h-auto sm:w-[300px] sm:h-auto md:w-[400px] md:h-auto lg:w-[500px] object-contain"
+            className="w-[500px] h-auto sm:w-[300px] sm:h-auto md:w-[400px] md:h-auto lg:w-[500px] object-contain rounded-2xl"
           />
         </div>
       </div>

@@ -84,11 +84,11 @@ export default function Perguntas() {
           {faqs.map((faq, idx) => (
             <div key={idx} className="relative border-b border-[#DADADA]">
               <button
-                className="w-full text-left py-3 sm:py-4 flex justify-between items-center focus:outline-none bg-transparent"
+                className="w-full text-left py-3 sm:py-4 flex justify-between items-center focus:outline-none bg-transparent cursor-pointer"
                 onClick={() => handleToggle(idx)}
                 style={{ borderBottom: "none" }}
               >
-                <span className="font-bold text-[#003057] text-base sm:text-lg md:text-[20px]">
+                <span className="font-bold text-[#003057] text-base sm:text-lg md:text-[20px] ">
                   {faq.question}
                 </span>
                 <span className="text-[#003057] text-lg sm:text-xl">

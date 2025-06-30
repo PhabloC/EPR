@@ -24,7 +24,6 @@ export default function Valores() {
     const el2 = box2Ref.current;
     if (!el1 || !el2) return;
 
-    // Remove o bloqueio da animação no mobile
     el1.style.opacity = 0;
     el1.style.transform = "translateY(40px)";
     el1.style.transition = "opacity 0.8s ease, transform 0.8s ease";

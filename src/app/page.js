@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <Primary />
       <Sobre />
-      <Valores />
       <Programa />
       <Etapas />
       <Faqs />

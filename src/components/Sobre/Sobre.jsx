@@ -53,7 +53,7 @@ export default function Sobre() {
     >
       <div
         ref={containerRef}
-        className="border-4 border-[#FFA500] rounded-[20px] w-[90%] p-4 sm:p-8 md:p-16 lg:p-20 mt-6 md:mt-10 bg-white shadow-md"
+        className="border-4 border-[#FFA500] rounded-[20px] w-[90%] p-4 sm:p-8 md:p-16 lg:p-20 mt-6 md:mt-10 mb-6 md:mb-10 bg-white shadow-md"
       >
         <h1 className="text-[#003057] font-bold text-xl sm:text-2xl md:text-3xl mb-4">
           SOBRE A EMPRESA

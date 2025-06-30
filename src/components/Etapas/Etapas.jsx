@@ -10,7 +10,6 @@ export default function Etapas() {
   useEffect(() => {
     const el = fadeRef.current;
     if (!el) return;
-    // Estado inicial
     el.style.opacity = 0;
     el.style.transform = "translateY(60px) scale(0.97)";
     el.style.transition =

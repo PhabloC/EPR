@@ -78,8 +78,14 @@ export default function Header() {
         {/* Botão desktop */}
         <div className="hidden md:block">
           <button
-            className="bg-[#71CC98] p-1 w-[160px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer
-          hover:bg-[#003057] hover:text-[#71CC98]"
+            className="bg-[#71CC98] p-1 w-[160px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98]"
+            onClick={() => {
+              setMenuOpen(false);
+              window.open(
+                "https://candidate.atsglobe.com/#/login/candidacy-registration/2995",
+                "_blank"
+              );
+            }}
           >
             INSCREVA-SE
           </button>
@@ -153,7 +159,13 @@ export default function Header() {
           </a>
           <button
             className="bg-[#71CC98] p-2 w-full rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98] mt-8"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              window.open(
+                "https://candidate.atsglobe.com/#/login/candidacy-registration/2995",
+                "_blank"
+              );
+            }}
           >
             INSCREVA-SE
           </button>

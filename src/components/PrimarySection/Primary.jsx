@@ -79,17 +79,23 @@ export default function Primary() {
           display: "flex",
           alignItems: "center",
           justifyContent: "flex-start",
-          pointerEvents: "none",
         }}
       >
-        <Image
-          src="/banner2.png"
-          alt="Banner 2"
-          width={600}
-          height={300}
-          style={{ marginLeft: 0, marginRight: "auto" }}
-          quality={100}
-        />
+        <a
+          href="https://candidate.atsglobe.com/#/login/candidacy-registration/2995"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          <Image
+            src="/banner2.png"
+            alt="Banner 2"
+            width={600}
+            height={300}
+            style={{ marginLeft: 0, marginRight: "auto" }}
+            quality={100}
+          />
+        </a>
       </div>
     </div>
   );
