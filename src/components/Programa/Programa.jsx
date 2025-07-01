@@ -298,7 +298,6 @@ export default function Programa() {
               <strong>junho de 2025</strong>, nos seguintes cursos:
             </p>
             <ul className="list-disc list-inside mt-6 sm:mt-8">
-              <li>Graduação concluída entre junho de 2023 e junho de 2025;</li>
               <li>
                 Ter disponibilidade para mudança nível nacional e viagens;
               </li>
