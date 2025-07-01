@@ -66,6 +66,22 @@ export default function Etapas() {
           />
         </div>
       </div>
+      <div
+        style={{ fontFamily: "Century-Gothic-Bold, sans-serif" }}
+        className="flex w-full justify-center items-center py-10"
+      >
+        <button
+          className="bg-[#71CC98] p-1 w-[160px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98]"
+          onClick={() => {
+            window.open(
+              "https://candidate.atsglobe.com/#/login/candidacy-registration/2995",
+              "_blank"
+            );
+          }}
+        >
+          INSCREVA-SE
+        </button>
+      </div>
     </>
   );
 }

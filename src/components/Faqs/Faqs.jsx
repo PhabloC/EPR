@@ -49,7 +49,8 @@ const faqs = [
   },
   {
     question: "Quais cursos são aceitos?",
-    answer: "Todos os cursos de graduação reconhecidos pelo MEC.",
+    answer:
+      "Administração, Administração com ênfase em Análise de Sistemas, Administração com ênfase em Ciências Contábeis, Administração com ênfase em Estratégia, Administração com ênfase em Finanças, Administração com ênfase em Gestão de Projetos, Administração com ênfase em Negócios, Administração com ênfase em Sistemas da Informação, Administração Publica, Ciências Econômicas, Direito, Economia Empresarial e Controladoria,Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica Mecânica, de Mobilidade, de Produção, de Produção Elétrica, de Produção Mecânica, de Gestão, Industrial, de Transportes, de Controle e Automação, Mecatrônica)",
   },
   {
     question: "É necessário inglês fluente?",

@@ -304,7 +304,7 @@ export default function Programa() {
                 com ênfase em Estratégia, Administração com ênfase em Finanças,
                 Administração com ênfase em Gestão de Projetos, Administração
                 com ênfase em Negócios, Administração com ênfase em Sistemas da
-                Informação, Administração Pública
+                Informação, Administração Publica
               </li>
               <li className="mb-6">Ciências Econômicas</li>
               <li className="mb-6">Direito</li>
@@ -316,7 +316,7 @@ export default function Programa() {
                 Controle e Automação, Mecatrônica)
               </li>
               <li className="mb-6">
-                Disponibilidade para mobilidade entre áreas e localidade
+                Ter disponibilidade para mudança nível nacional
               </li>
               <li>
                 Possuir Carteira Nacional de Habilitação (CNH), categoria B
@@ -333,6 +333,23 @@ export default function Programa() {
             className="w-[500px] h-auto sm:w-[300px] sm:h-auto md:w-[400px] md:h-auto lg:w-[500px] object-contain rounded-2xl"
           />
         </div>
+      </div>
+      <div
+        style={{ fontFamily: "Century-Gothic-Bold, sans-serif" }}
+        className="bg-[#003057] flex w-full justify-center items-center py-10 h-10 pb-20"
+      >
+        <button
+          className="bg-[#71CC98] p-1 w-[160px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98] hover:border-[#71CC98] hover:border
+          "
+          onClick={() => {
+            window.open(
+              "https://candidate.atsglobe.com/#/login/candidacy-registration/2995",
+              "_blank"
+            );
+          }}
+        >
+          INSCREVA-SE
+        </button>
       </div>
     </>
   );
