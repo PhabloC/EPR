@@ -298,28 +298,23 @@ export default function Programa() {
               <strong>junho de 2025</strong>, nos seguintes cursos:
             </p>
             <ul className="list-disc list-inside mt-6 sm:mt-8">
+              <li>Graduação concluída entre junho de 2023 e junho de 2025;</li>
+              <li>Modelo de trabalho presencial;</li>
               <li>
-                Administração, Administração com ênfase em Análise de Sistemas,
-                Administração com ênfase em Ciências Contábeis, Administração
-                com ênfase em Estratégia, Administração com ênfase em Finanças,
-                Administração com ênfase em Gestão de Projetos, Administração
-                com ênfase em Negócios, Administração com ênfase em Sistemas da
-                Informação, Administração Publica
+                Possuir Carteira Nacional de Habilitação (CNH), categoria B;
               </li>
-              <li>Ciências Econômicas</li>
-              <li>Direito</li>
-              <li>Economia Empresarial e Controladoria</li>
               <li>
-                Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica
-                Mecânica, de Mobilidade, de Produção, de Produção Elétrica, de
-                Produção Mecânica, de Gestão, Industrial, de Transportes, de
-                Controle e Automação, Mecatrônica)
-              </li>
-            </ul>
-            <ul className="mt-6">
-              <li>Ter disponibilidade para mudança nível nacional</li>
-              <li>
-                Possuir Carteira Nacional de Habilitação (CNH), categoria B
+                <strong>Cursos considerados:</strong>Administração,
+                Administração com ênfase em Análise de Sistemas, Administração
+                com ênfase em Ciências Contábeis, Administração com ênfase em
+                Estratégia, Administração com ênfase em Finanças, Administração
+                com ênfase em Gestão de Projetos, Administração com ênfase em
+                Negócios, Administração com ênfase em Sistemas da Informação,
+                Administração Pública, Ciências Econômicas, Direito, Economia
+                Empresarial e Controladoria, Engenharias (Civil, Eletromecânica,
+                Elétrica, Eletrônica Mecânica, de Mobilidade, de Produção, de
+                Produção Elétrica, de Produção Mecânica, de Gestão, Industrial,
+                de Transportes, de Controle e Automação, Mecatrônica).
               </li>
             </ul>
           </div>
