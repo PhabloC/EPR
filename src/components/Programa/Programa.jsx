@@ -330,7 +330,8 @@ export default function Programa() {
             alt="woman"
             width={500}
             height={100}
-            className="w-[500px] h-auto sm:w-[300px] sm:h-auto md:w-[400px] md:h-auto lg:w-[500px] object-contain rounded-2xl"
+            className="w-[100%] h-auto sm:w-[100%] sm:h-auto md:w-[100%] md:h-[600px] lg:w-[100%] object-contain rounded-lg"
+            objectFit="cover"
           />
         </div>
       </div>
