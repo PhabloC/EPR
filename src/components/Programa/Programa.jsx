@@ -304,7 +304,7 @@ export default function Programa() {
                 Possuir Carteira Nacional de Habilitação (CNH), categoria B;
               </li>
               <li>
-                <strong>Cursos considerados:</strong>Administração,
+                <strong>Cursos considerados:</strong> Administração,
                 Administração com ênfase em Análise de Sistemas, Administração
                 com ênfase em Ciências Contábeis, Administração com ênfase em
                 Estratégia, Administração com ênfase em Finanças, Administração
