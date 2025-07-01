@@ -49,8 +49,27 @@ const faqs = [
   },
   {
     question: "Quais cursos são aceitos?",
-    answer:
-      "Administração, Administração com ênfase em Análise de Sistemas, Administração com ênfase em Ciências Contábeis, Administração com ênfase em Estratégia, Administração com ênfase em Finanças, Administração com ênfase em Gestão de Projetos, Administração com ênfase em Negócios, Administração com ênfase em Sistemas da Informação, Administração Publica, Ciências Econômicas, Direito, Economia Empresarial e Controladoria,Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica Mecânica, de Mobilidade, de Produção, de Produção Elétrica, de Produção Mecânica, de Gestão, Industrial, de Transportes, de Controle e Automação, Mecatrônica)",
+    answer: (
+      <ul className="list-disc list-inside ">
+        <li className="mb-2">
+          Administração, Administração com ênfase em Análise de Sistemas,
+          Administração com ênfase em Ciências Contábeis, Administração com
+          ênfase em Estratégia, Administração com ênfase em Finanças,
+          Administração com ênfase em Gestão de Projetos, Administração com
+          ênfase em Negócios, Administração com ênfase em Sistemas da
+          Informação, Administração Publica
+        </li>
+        <li className="mb-2">Ciências Econômicas</li>
+        <li className="mb-2">Direito</li>
+        <li className="mb-2">Economia Empresarial e Controladoria</li>
+        <li>
+          Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica Mecânica, de
+          Mobilidade, de Produção, de Produção Elétrica, de Produção Mecânica,
+          de Gestão, Industrial, de Transportes, de Controle e Automação,
+          Mecatrônica)
+        </li>
+      </ul>
+    ),
   },
   {
     question: "É necessário inglês fluente?",
@@ -99,7 +118,7 @@ export default function Perguntas() {
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden animate-fadeIn`}
                 style={{
-                  maxHeight: openIndex === idx ? "200px" : "0",
+                  maxHeight: openIndex === idx ? "1000px" : "0",
                   opacity: openIndex === idx ? 1 : 0,
                   padding: openIndex === idx ? "0.5rem 1rem" : "0 1rem",
                 }}
