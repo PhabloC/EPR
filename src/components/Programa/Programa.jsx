@@ -298,7 +298,7 @@ export default function Programa() {
               <strong>junho de 2025</strong>, nos seguintes cursos:
             </p>
             <ul className="list-disc list-inside mt-6 sm:mt-8">
-              <li className="mb-6">
+              <li>
                 Administração, Administração com ênfase em Análise de Sistemas,
                 Administração com ênfase em Ciências Contábeis, Administração
                 com ênfase em Estratégia, Administração com ênfase em Finanças,
@@ -306,18 +306,18 @@ export default function Programa() {
                 com ênfase em Negócios, Administração com ênfase em Sistemas da
                 Informação, Administração Publica
               </li>
-              <li className="mb-6">Ciências Econômicas</li>
-              <li className="mb-6">Direito</li>
-              <li className="mb-6">Economia Empresarial e Controladoria</li>
-              <li className="mb-6">
+              <li>Ciências Econômicas</li>
+              <li>Direito</li>
+              <li>Economia Empresarial e Controladoria</li>
+              <li>
                 Engenharias (Civil, Eletromecânica, Elétrica, Eletrônica
                 Mecânica, de Mobilidade, de Produção, de Produção Elétrica, de
                 Produção Mecânica, de Gestão, Industrial, de Transportes, de
                 Controle e Automação, Mecatrônica)
               </li>
-              <li className="mb-6">
-                Ter disponibilidade para mudança nível nacional
-              </li>
+            </ul>
+            <ul className="mt-6">
+              <li>Ter disponibilidade para mudança nível nacional</li>
               <li>
                 Possuir Carteira Nacional de Habilitação (CNH), categoria B
               </li>
@@ -330,7 +330,7 @@ export default function Programa() {
             alt="woman"
             width={500}
             height={100}
-            className="w-[100%] h-auto sm:w-[100%] sm:h-auto md:w-[100%] md:h-[600px] lg:w-[100%] object-contain rounded-lg"
+            className="w-[100%] h-auto sm:w-[100%] sm:h-auto md:w-[100%] md:h-[500px] lg:w-[100%] object-contain rounded-lg"
             objectFit="cover"
           />
         </div>
@@ -340,7 +340,7 @@ export default function Programa() {
         className="bg-[#003057] flex w-full justify-center items-center py-10 h-10 pb-20"
       >
         <button
-          className="bg-[#71CC98] p-1 w-[160px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98] hover:border-[#71CC98] hover:border
+          className="bg-[#71CC98]  text-2xl p-3 w-[250px] rounded-3xl font-weight-700 text-[#003057] cursor-pointer hover:bg-[#003057] hover:text-[#71CC98] hover:border-[#71CC98] hover:border
           "
           onClick={() => {
             window.open(
